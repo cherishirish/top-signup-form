@@ -1,0 +1,205 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: dimgrey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CUSTOM FONT */
+@font-face {
+  font-family: 'NorseBold';
+  src: url('/Norse-Bold.otf');
+}
+
+
+/* LAYOUT */
+
+.container {
+  width: 1200px;
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 40%;
+  background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+  
+  a {
+    color: white;
+  }
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  margin-top: 20vh;
+
+  p {
+    font-family: 'NorseBold';
+    font-size: 4vw;
+  }
+
+  img {
+    max-width: 4vw;
+  }
+}
+
+p.credit {
+  color: white;
+  font-size: .8vw;
+}
+
+/* FORM */
+
+
+
+.form-container{
+  background-color: #fdfdfd;
+  width: 65%;
+  display: flex;
+
+}
+
+
+
+
+#form { 
+ 
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 30px;
+}
+
+.form-part {
+  margin: 0 50px;
+}
+
+#form .form-part:nth-child(2) {
+  margin: 0;
+  padding: 30px 50px;
+  width: 100%;
+  box-shadow: 0px 3px 8px #c4c6ca;
+}
+
+legend {
+  margin-bottom: 20px;
+}
+
+.form-part {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+.form-part:first-of-type p:last-of-type {
+  margin: 20px 0;
+}
+
+
+.form-part label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: .55em;
+  letter-spacing: 1px;
+}
+
+.form-part form {
+  display: flex;
+  flex-direction: row;
+}
+.form-part form div{
+  width: 50%;
+}
+
+.form-part input {
+  font-size: .7rem;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-part form input:focus {
+  border: 2px solid blue;
+  outline: none;
+  box-shadow: 3px 3px 5px #c4c6ca;
+}
+
+.form-part input:not(:focus):invalid {
+  border: 2px solid #ccc;
+}
+
+.form-part input:invalid {
+  border: 2px solid red;
+  outline: none;
+}
+
+
+button {
+  padding: 10px 50px;
+  background-color: #596D48;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+.form-part:last-of-type button  {
+  margin: 10px 0;
+}
+
+
+.form-part:last-of-type p {
+  margin: 10px 0;
+  font-size: .9rem;
+}
+
+.form-part p a {
+  color:  #596D48;
+  text-decoration: none;
+}
+
